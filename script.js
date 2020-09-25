@@ -4,8 +4,6 @@ let rps = ['rock', 'paper', 'scissors'];
 function rpsGame(humanChoice) {
     let botChoice = rpsBot();
     let finalResult = whoWon(humanChoice.id, botChoice);
-    console.log(finalResult);
-    console.log(scores.human, scores.bot);
     rpsFrontEnd(humanChoice.id, botChoice, finalResult);
 }
 
