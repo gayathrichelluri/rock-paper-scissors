@@ -1,0 +1,235 @@
+body {
+    background-color: rgba(20, 20, 20, 0.95);
+    transition: ;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    color: rgba(20, 20, 20, 0.95);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    background-color: rgb(212, 212, 212);
+    padding: 20px; 
+    padding-top: 30px;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.images img {
+    height: 200px;
+    width: 200px;
+    margin: 10px 30px;
+    
+    display: inline-block;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px;
+    background-clip: padding-box;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+#rock {
+    background-color: rgba(201, 154, 103, 1);
+}
+
+#paper {
+    background-color: rgba(197, 186, 222, 1);
+}
+
+#scissors {
+    background-color: rgba(193, 217, 180, 1);
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+
+    box-shadow: 0px 0px 4px lightcyan;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+
+    color: rgb(212, 212, 212);
+    margin-top: 40px;
+    padding: 50px;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.scoreboard div, span {
+    padding: 0 20px;
+}
+
+.result {
+    color: rgb(212, 212, 212);
+    font-size: x-large;
+    font-family: 'Audiowide', cursive;
+    padding: 50px;
+}
+
+.player, .score {
+    font-family: 'Audiowide', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+
+.player {
+    border-radius: 10px;
+    color: rgb(20, 20, 20);
+    background-color: rgb(252, 116, 116);
+}
+
+#reset {
+    background-color: rgb(212, 212, 212);
+    color: rgb(20, 20, 20);
+    font-size: small;
+    text-align: center;
+}
+
+#reset:hover{
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
+#lost {
+    background-color: rgb(255, 92, 92);
+}
+
+#won {
+    background-color: rgb(123, 227, 140);
+}
+
+#tied {
+    background-color: rgb(255, 201, 92);
+}
+
+#result-div {
+    color: rgb(212, 212, 212);
+    font-family: 'Audiowide', cursive;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 760px) {
+    .header {
+        padding: 20px; 
+        padding-top: 30px;
+        font-size: 1.5em;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    .images img{
+        height: 150px;
+        width: 150px;
+    }
+    .scoreboard {
+        padding: 0px;
+        font-size: small;
+    }
+    .player, .score {
+        font-size: small;
+    }
+    .scoreboard div, span {
+        padding: 5px;
+    }
+    .result {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+    
+    
+@media (max-width : 280px) {
+    .header {
+        padding: 20px; 
+        padding-top: 30px;
+        font-size: 1em;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    .images img{
+        height: 100px;
+        width: 100px;
+    }
+    .scoreboard {
+        padding: 2px;
+        font-size: small;
+    }
+    .player, .score {
+        font-size: small;
+    }
+    .scoreboard div, span {
+        padding: 5px;
+    }
+    .result {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+    
+@media (max-width : 480px) {
+    .header {
+        padding: 20px; 
+        padding-top: 30px;
+        font-size: 1.5em;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    .images img{
+        height: 100px;
+        width: 100px;
+    }
+    .scoreboard {
+        font-size: small;
+    }
+    .player, .score {
+        font-size: small;
+    }
+    .scoreboard div, span {
+        padding: 5px;
+    }
+    .result {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+}
+
+
